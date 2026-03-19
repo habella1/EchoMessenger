@@ -33,6 +33,9 @@
             txtMessage = new TextBox();
             btnSend = new Button();
             lbCount = new Label();
+            btnDelete = new Button();
+            button1 = new Button();
+            btnClear = new Button();
             SuspendLayout();
             // 
             // lbTitle
@@ -87,12 +90,48 @@
             lbCount.Text = "현재 대화 : 0개";
             lbCount.Click += lbCount_Click;
             // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.Violet;
+            btnDelete.Font = new Font("문체부 쓰기 정체", 7.875F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 129);
+            btnDelete.Location = new Point(490, 40);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(90, 39);
+            btnDelete.TabIndex = 5;
+            btnDelete.Text = "삭제";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(595, 398);
+            button1.Name = "button1";
+            button1.Size = new Size(8, 8);
+            button1.TabIndex = 6;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            btnClear.BackColor = Color.LightPink;
+            btnClear.Font = new Font("문체부 쓰기 정체", 7.875F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 129);
+            btnClear.Location = new Point(595, 40);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(183, 39);
+            btnClear.TabIndex = 7;
+            btnClear.Text = "대화 기록 삭제";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightYellow;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnClear);
+            Controls.Add(button1);
+            Controls.Add(btnDelete);
             Controls.Add(lbCount);
             Controls.Add(btnSend);
             Controls.Add(txtMessage);
@@ -111,5 +150,8 @@
         private TextBox txtMessage;
         private Button btnSend;
         private Label lbCount;
+        private Button btnDelete;
+        private Button button1;
+        private Button btnClear;
     }
 }
