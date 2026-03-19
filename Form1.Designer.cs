@@ -32,6 +32,7 @@
             lstChat = new ListBox();
             txtMessage = new TextBox();
             btnSend = new Button();
+            lbCount = new Label();
             SuspendLayout();
             // 
             // lbTitle
@@ -75,12 +76,24 @@
             btnSend.UseVisualStyleBackColor = false;
             btnSend.Click += btnSend_Click;
             // 
+            // lbCount
+            // 
+            lbCount.AutoSize = true;
+            lbCount.Font = new Font("문체부 바탕체", 9F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            lbCount.Location = new Point(36, 390);
+            lbCount.Name = "lbCount";
+            lbCount.Size = new Size(181, 24);
+            lbCount.TabIndex = 4;
+            lbCount.Text = "현재 대화 : 0개";
+            lbCount.Click += lbCount_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightYellow;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbCount);
             Controls.Add(btnSend);
             Controls.Add(txtMessage);
             Controls.Add(lstChat);
@@ -97,5 +110,6 @@
         private ListBox lstChat;
         private TextBox txtMessage;
         private Button btnSend;
+        private Label lbCount;
     }
 }
