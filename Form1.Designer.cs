@@ -28,12 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            label1 = new Label();
+            listBox1 = new ListBox();
+            txtMessage = new TextBox();
+            btnSend = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("한컴 백제 M", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            label1.ForeColor = Color.Turquoise;
+            label1.Location = new Point(38, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(446, 63);
+            label1.TabIndex = 0;
+            label1.Text = "Echo Messenger";
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.Location = new Point(48, 85);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(707, 196);
+            listBox1.TabIndex = 1;
+            // 
+            // txtMessage
+            // 
+            txtMessage.Location = new Point(38, 335);
+            txtMessage.Name = "txtMessage";
+            txtMessage.Size = new Size(573, 39);
+            txtMessage.TabIndex = 2;
+            txtMessage.TextChanged += textBox1_TextChanged;
+            // 
+            // btnSend
+            // 
+            btnSend.BackColor = Color.MistyRose;
+            btnSend.Font = new Font("문체부 바탕체", 9F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnSend.Location = new Point(643, 328);
+            btnSend.Name = "btnSend";
+            btnSend.Size = new Size(112, 54);
+            btnSend.TabIndex = 3;
+            btnSend.Text = "전송";
+            btnSend.UseVisualStyleBackColor = false;
+            btnSend.Click += btnSend_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightYellow;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSend);
+            Controls.Add(txtMessage);
+            Controls.Add(listBox1);
+            Controls.Add(label1);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private ListBox listBox1;
+        private TextBox txtMessage;
+        private Button btnSend;
     }
 }
