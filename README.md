@@ -1,9 +1,16 @@
-# 3주차 과제: Echo Messenger (데이터 입력 처리 및텍스트 문자열(String) 처리방법)
+# 3주차 과제: (C# 코딩) Echo Messenger (데이터 입력 처리 및텍스트 문자열(String) 처리방법)
 -이름: 하다현 (24018097)
 -핵심기능: 
 
-## 실행 화면
-(여기에 실행 중인 스크린샷이나 GIF를 마우스로 끌어다 넣으세요!)
+## 개요
+- C# 프로그래밍 학습
+- 1줄 소개: 사용자로부터 키보드 입력을 받아서 처리하는 프로그램
+- 사용한 플랫폼: C#, .NET Windows Forms, Visual Studio, GitHub
+- 사용한 컨트롤: Label, TextBox, ListBox, Button
+- 사용한 기술과 구현한 기능:
+  - Visual Studio를 이용하여 UI 디자인
+  - string 클래스를 이용한 사용자 입력 데이터 처리
+  - DateTime 클래스를 이용한 현재시간 정보 구하기
 
 ## 기능 설명
 1단계 - 기본 UI 및 데이터 연동
@@ -36,6 +43,25 @@
      cf) Trim() 함수 사용 방법: string data = " 20260318 ";
                                string clean = data.Trim(); // *공백 제거
                                string year = clean.Substring(0, 4); // "2026" // +)특정 부분만 추출
+     
+
+## 실행 화면
+- 1단계 코드의 실행 스크린샷
+  <img width="804" height="504" alt="스크린샷 2026-03-19 122226" src="https://github.com/user-attachments/assets/c3a6b135-5885-43af-86f2-8d840ef32add" />
+
+  1. Label, Button, ListBox, TextBox 적절히 배치하기
+     cf) Label -> lbTitle
+         Button -> btnSend
+         ListBox -> lstChat
+         TextBox -> txtMessage
+  2. 전송 버튼 클릭 시 txtMessage에 입력된 텍스트를 lstChat의 항목(Items)으로 추가하기
+  3. 추가 직후 TextMessage의 내용을 Clear() 메서드를 이용해 비운 후, 다음 입력 준비하기
+
+- 2단계 코드의 실행 스크린
+
+- 3단계 코드의 실행 스크린
+
+
      
 
 ## 참고
