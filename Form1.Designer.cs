@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lbTitle = new Label();
             lstChat = new ListBox();
             txtMessage = new TextBox();
             btnSend = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lbTitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("한컴 백제 M", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            label1.ForeColor = Color.Turquoise;
-            label1.Location = new Point(38, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(446, 63);
-            label1.TabIndex = 0;
-            label1.Text = "Echo Messenger";
+            lbTitle.AutoSize = true;
+            lbTitle.Font = new Font("한컴 백제 M", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lbTitle.ForeColor = Color.Turquoise;
+            lbTitle.Location = new Point(38, 22);
+            lbTitle.Name = "lbTitle";
+            lbTitle.Size = new Size(446, 63);
+            lbTitle.TabIndex = 0;
+            lbTitle.Text = "Echo Messenger";
+            lbTitle.Click += lbTitle_Click;
             // 
             // lstChat
             // 
@@ -60,6 +61,7 @@
             txtMessage.Size = new Size(573, 39);
             txtMessage.TabIndex = 2;
             txtMessage.TextChanged += textBox1_TextChanged;
+            txtMessage.KeyDown += txtMessage_KeyDown;
             // 
             // btnSend
             // 
@@ -82,7 +84,7 @@
             Controls.Add(btnSend);
             Controls.Add(txtMessage);
             Controls.Add(lstChat);
-            Controls.Add(label1);
+            Controls.Add(lbTitle);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -91,7 +93,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lbTitle;
         private ListBox lstChat;
         private TextBox txtMessage;
         private Button btnSend;
