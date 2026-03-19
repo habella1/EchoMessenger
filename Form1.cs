@@ -19,9 +19,9 @@ namespace Echo_Messenger
             string typed_msg = txtMessage.Text;
 
             // 전송 버튼 클릭 시 TextBox 내용 ListBoxf에 추가
-            listBox1.Items.Add(typed_msg);  
+            lstChat.Items.Add(typed_msg);  
 
-            // 입력창 비우기
+            // 입력창 비우기 Clear()메서드 사용
             txtMessage.Clear();
 
         }

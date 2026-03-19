@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            listBox1 = new ListBox();
+            lstChat = new ListBox();
             txtMessage = new TextBox();
             btnSend = new Button();
             SuspendLayout();
@@ -45,13 +45,13 @@
             label1.TabIndex = 0;
             label1.Text = "Echo Messenger";
             // 
-            // listBox1
+            // lstChat
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(48, 85);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(707, 196);
-            listBox1.TabIndex = 1;
+            lstChat.FormattingEnabled = true;
+            lstChat.Location = new Point(48, 85);
+            lstChat.Name = "lstChat";
+            lstChat.Size = new Size(707, 196);
+            lstChat.TabIndex = 1;
             // 
             // txtMessage
             // 
@@ -81,7 +81,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnSend);
             Controls.Add(txtMessage);
-            Controls.Add(listBox1);
+            Controls.Add(lstChat);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -92,7 +92,7 @@
         #endregion
 
         private Label label1;
-        private ListBox listBox1;
+        private ListBox lstChat;
         private TextBox txtMessage;
         private Button btnSend;
     }
