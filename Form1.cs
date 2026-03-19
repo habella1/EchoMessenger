@@ -33,7 +33,7 @@ namespace Echo_Messenger
             string time = DateTime.Now.ToString("HH:mm:ss");
             string result = $"[{time}] {typed_msg}";
 
-            // 글자 수 제한
+            // 글자 수 제한 //
             if (typed_msg.Length > 50)
             {
                 MessageBox.Show("50자 이하로 입력하세요!");
